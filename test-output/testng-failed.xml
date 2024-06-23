@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Restful booker API Test suite]" guice-stage="DEVELOPMENT">
+  <test name="ATB6xLearningRestAssured(failed)">
+    <classes>
+      <class name="ATB6xLearningRestAssured.com.ttaa.testng.Lab067">
+        <methods>
+          <include name="getRequestSample2"/>
+          <include name="getRequestSample1"/>
+        </methods>
+      </class> <!-- ATB6xLearningRestAssured.com.ttaa.testng.Lab067 -->
+    </classes>
+  </test> <!-- ATB6xLearningRestAssured(failed) -->
+</suite> <!-- Failed suite [Restful booker API Test suite] -->
