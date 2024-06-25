@@ -3,12 +3,11 @@
 <suite name="Failed suite [Restful booker API Test suite]" guice-stage="DEVELOPMENT">
   <test name="ATB6xLearningRestAssured(failed)">
     <classes>
-      <class name="ATB6xLearningRestAssured.com.ttaa.testng.Lab067">
+      <class name="ex_220624.CRUD.POST.Lab074">
         <methods>
-          <include name="getRequestSample2"/>
-          <include name="getRequestSample1"/>
+          <include name="postRequestNonBDDNegative"/>
         </methods>
-      </class> <!-- ATB6xLearningRestAssured.com.ttaa.testng.Lab067 -->
+      </class> <!-- ex_220624.CRUD.POST.Lab074 -->
     </classes>
   </test> <!-- ATB6xLearningRestAssured(failed) -->
 </suite> <!-- Failed suite [Restful booker API Test suite] -->
