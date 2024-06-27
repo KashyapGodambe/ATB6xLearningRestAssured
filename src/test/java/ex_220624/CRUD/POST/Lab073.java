@@ -26,7 +26,7 @@ public class Lab073 {
 	
 	
 	@Test
-	public void postRequestBDDPositive()
+	public void testPostRequestBDDPositive()
 	{
 		//Create Booking
 		

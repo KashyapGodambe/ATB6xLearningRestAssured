@@ -1,4 +1,4 @@
-package ex_220624.CRUD.GET.NonBDDStyle;
+package ex_220624.CRUD.GET.BDDStyle;
 
 import org.testng.annotations.Test;
 
@@ -9,13 +9,13 @@ public class Lab072 {
 	//
 	
 	@Test
-	public void getRequestPositive()
+	public void testGetRequestPostiveBDDStyle()
 	{
 		RequestSpecification r = RestAssured.given();
 		r.baseUri("https://restful-booker.herokuapp.com");
 		r.basePath("/booking/1207");
 		
-		r.when().get();
+		r.when().log().all().get();
 		
 		r.then().log().all().statusCode(200);
 		
@@ -24,13 +24,13 @@ public class Lab072 {
 	}
 	
 	@Test
-	public void getRequestNegative()
+	public void testGetRequestNegativeBDDStyle()
 	{
 		RequestSpecification r = RestAssured.given();
 		r.baseUri("https://restful-booker.herokuapp.com");
 		r.basePath("/booking/-1");
 		
-		r.when().get();
+		r.when().log().all().get();
 		
 		r.then().log().all().statusCode(404);
 		

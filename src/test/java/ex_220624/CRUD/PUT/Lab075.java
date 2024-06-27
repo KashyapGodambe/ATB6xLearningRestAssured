@@ -1,5 +1,6 @@
 package ex_220624.CRUD.PUT;
 
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -13,8 +14,8 @@ public class Lab075 {
 	RequestSpecification rs =  RestAssured.given();;
 	Response response;
 	ValidatableResponse vr;
-	String token = "78e5c9c49f3002e";
-	String bookingId = "4442";
+	String token = "8f997d2b226919a";
+	String bookingId = "668";
 	
 	String base_Url = "https://restful-booker.herokuapp.com";
 	String base_Path = "/booking";
@@ -22,9 +23,9 @@ public class Lab075 {
 	
 	
 	@Test
-	public void testPutRequestNonBDD()
+	public void testPutRequestNonBDDPositive()
 	{
-		String base_Path_Updated = base_Path + "/4442";
+		String base_Path_Updated = base_Path + "/"+bookingId;
 		System.out.println(base_Path_Updated);
 		
 		String Payload = "{\r\n"
@@ -41,7 +42,7 @@ public class Lab075 {
 		
 		
 		
-		rs.basePath(base_Url);
+		rs.baseUri(base_Url);
 		rs.basePath(base_Path_Updated);
 		rs.contentType(ContentType.JSON);
 		rs.cookie("token", token);
@@ -49,6 +50,17 @@ public class Lab075 {
 		
 		
 		response = rs.when().log().all().put();
+		
+		
+		vr = response.then().log().all();
+		vr.statusCode(200);
+		
+		vr.body("firstname", Matchers.equalTo("Sujawala"));
+		vr.body("lastname", Matchers.equalTo("Moreeeee"));
+		
+		
+		
+		
 	}
 	
 

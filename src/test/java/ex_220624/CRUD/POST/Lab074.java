@@ -33,7 +33,7 @@ public class Lab074 {
 	
 	@Description("TC#1 - Verify that create booking is working with valid payload")
 	@Test
-	public void postRequestNonBDDPositive()
+	public void testPostRequestNonBDDPositive()
 	{
 		//Create Booking
 		
@@ -61,11 +61,9 @@ public class Lab074 {
 	
 	@Description("TC#2 - Verify that create booking is not working with invalid payload with 500 error")
 	@Test
-	public void postRequestNonBDDNegative()
+	public void testPostRequestNonBDDNegative()
 	{
 		//Create Booking
-		
-			
 		
 		r.baseUri(base_Url);
 		r.basePath(base_Path);

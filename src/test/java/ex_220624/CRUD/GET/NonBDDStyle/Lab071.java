@@ -8,7 +8,7 @@ import io.restassured.specification.RequestSpecification;
 public class Lab071 {
 	
 	@Test 
-	public void getRequestNonBDDStyle()
+	public void testGetRequestNonBDDStyle()
 	{
 		RequestSpecification rs = RestAssured.given();
 		
