@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Restful booker API Test suite]" guice-stage="DEVELOPMENT">
-  <test name="ATB6xLearningRestAssured(failed)">
+  <test name="Rest Assured Misc Concepts(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="ex_220624.CRUD.POST.Lab074">
+      <class name="ex_250624.RA_MISC.Lab083">
         <methods>
-          <include name="postRequestNonBDDNegative"/>
+          <include name="testDemo"/>
         </methods>
-      </class> <!-- ex_220624.CRUD.POST.Lab074 -->
+      </class> <!-- ex_250624.RA_MISC.Lab083 -->
     </classes>
-  </test> <!-- ATB6xLearningRestAssured(failed) -->
+  </test> <!-- Rest Assured Misc Concepts(failed) -->
 </suite> <!-- Failed suite [Restful booker API Test suite] -->

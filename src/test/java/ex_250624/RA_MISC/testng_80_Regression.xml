@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful booker API Test suite">
+    <test verbose="2" preserve-order="true" name="Rest Assured Misc Concepts">
+       <groups>
+			<run>
+				<include name="Regression"></include>
+				
+			</run>
+	   </groups>
+       
+       
+       <classes>
+            <class name="ex_250624.RA_MISC.Lab080"> </class>
+                 
+        </classes> 
+       
+       	
+    </test>
+</suite>

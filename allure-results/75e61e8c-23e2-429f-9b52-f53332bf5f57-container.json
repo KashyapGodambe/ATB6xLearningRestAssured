@@ -1,0 +1,1 @@
+{"uuid":"75e61e8c-23e2-429f-9b52-f53332bf5f57","name":"Default suite","children":["38f07916-8d30-42f5-854a-031e17744873"],"befores":[],"afters":[{"name":"sendReportToQALEad","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719662818164,"stop":1719662818165}],"start":1719662817974,"stop":1719662818166}

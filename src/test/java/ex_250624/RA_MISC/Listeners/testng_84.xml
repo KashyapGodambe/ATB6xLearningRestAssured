@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful booker API Test suite">
+	
+	<listeners>
+			<listener class-name = "ex_250624.RA_MISC.Listeners.CustomeListener"> </listener>
+			
+		</listeners>
+    <test verbose="2" preserve-order="true" name="Rest Assured Misc Concepts">
+		
+		
+        
+    
+       <classes>
+            <class name="ex_250624.RA_MISC.Listeners.Lab084"> </class>
+            
+           
+        </classes> 
+       
+       	
+    </test>
+</suite>

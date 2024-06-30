@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="ex_220621.FULL.CRUD.Lab078">
+      <class name="ex_250624.RA_MISC.Listeners.Lab084">
         <methods>
-          <include name="getBookingId"/>
-          <include name="testPutRequestPositive"/>
-          <include name="getAToken"/>
+          <include name="test1"/>
+          <include name="sendReportToQALEad"/>
         </methods>
-      </class> <!-- ex_220621.FULL.CRUD.Lab078 -->
+      </class> <!-- ex_250624.RA_MISC.Listeners.Lab084 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

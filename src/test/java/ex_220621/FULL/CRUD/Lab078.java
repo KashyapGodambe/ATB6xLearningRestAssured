@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.*;
 
-
+import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -82,7 +82,7 @@ public class Lab078 {
 		
 	}
 	
-	
+	@Description("TC#1 - Verify the integration sceanrio of generate token, create booking & get bookingId & update the booking")
 	@Test
 	public void testPutRequestPositive()
 	{
